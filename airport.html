@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Spatial by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	
 -->
 <html>
 	<head>
@@ -10,11 +8,11 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/includeHTML.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -23,114 +21,28 @@
 	</head>
 	<body>
 
-		<!-- Header -->
-			<header id="header">				
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="call.html">Call</a></li>
-						<li><a href="program.html">Program</a></li>
-						<li><a href="keynotes.html">Keynotes</a></li>
-						<li><a href="school.html">AMW School</a></li>
-						<li><a href="organization.html">Organization</a></li>
-						<li><a href="attending.html">Attending</a></li>
-						<li><a href="registration.html">Registration</a></li>
-						<li><a href="news.html">News!</a></li>
-						<li><a href="previous.html">Previous AMW</a></li>
-					</ul>
-				</nav>
-			</header>
+		<div w3-include-html="header-section.html"></div>
 
-		<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="container">
-					<header class="major special">
-						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsJ1QqJiiuGk1Z6jt4Wqt-lPYJs6g9sedqn0Y639qyNLwVLA/viewform?embedded=true" width="760" height="600" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>				
-					</header>
-				</div>		
-			</section>
-<section>
-				<hr />		
-				<div class="container" >
-				<div class="12u(small)" style="height: auto; display: inline-block">	
-						<h3>Sponsored by:</h3>
-					</div>
-					<div class="12u" style="height: auto; display: inline-block; align: center">
-						<div class="-2u 2u -1u(small) 10u(small) sponsors-container" style="float: left">
-							<a href="http://www.vldb.org/">	
-								<span class="sponsor-logo"><img src="images/logos/vldb.jpg" width="75%"></span>
-							</a>
-						</div>
-					</div>
-					
-				
-					<div class="12u(small)" style="height: auto; display: inline-block">	
-						<h3>Organized by:</h3>
-					</div>
-					<div class="12u" style="height: auto; display: inline-block; align: center">
-						<div class="-2u 2u -1u(small) 10u(small) sponsors-container" style="float: left">
-							<a href="http://eisc.univalle.edu.co/">	
-								<span class="sponsor-logo"><img src="images/logos/univalle.gif" width="50%"></span>
-							</a>
-						</div>
-						<div class="-1u 2u -1u(small) 10u(small) sponsors-container" style="float: left">
-							<a href="https://www.javerianacali.edu.co/programas/ingenieria-de-sistemas-y-computacion">	
-								<span class="sponsor-logo"><img src="images/logos/javeriana.png" width="120%"/></span>
-							</a>	
-						</div>				
-						
-						<div class="-1u 2u -1u(small) 10u(small) sponsors-container" style="float: left">
-							<a href="https://capsenta.com/">	
-								<span class="sponsor-logo"><img src="images/logos/capsenta.png" width="120%"/></span>
-							</a>	
-						</div>	
-					</div>
-					<style>
-						@media (max-width: 739px) {
-							.sponsors-container {
-						    	min-height: 200px;
-							}
-						}
-						@media (min-width: 740px) {
-							.sponsors-container {
-						    	height: 180px;
-							}
-						}
-						.sponsors-container {
-						    text-align: center;  /* align the inline(-block) elements horizontally */
-						    font: 0/0 a;         /* remove the gap between inline(-block) elements */
-						    padding: 20px 0px;
-						}
+		<section id="main" class="wrapper">
+			<div class="container">
+				<header class="major special">
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsJ1QqJiiuGk1Z6jt4Wqt-lPYJs6g9sedqn0Y639qyNLwVLA/viewform?embedded=true" width="760" height="600" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>				
+				</header>
+			</div>		
+		</section>
 
-						.sponsors-container:before {    /* create a full-height inline block pseudo=element */
-						    content: ' ';
-						    display: inline-block;
-						    vertical-align: middle;  /* vertical alignment of the inline element */
-						    height: 100%;
-						}
+		<section>
+			<div class="container">
+				<p>To correctly see the following section please deactivate your adblocker.</p>
+			</div>
+			<div w3-include-html="sponsor-section.html"></div>
+		</section>
 
-						.sponsor-logo {
-						    display: inline-block;
-						    vertical-align: middle;  /* vertical alignment of the inline element */
-						}
-					</style>
-				</div>
-			</section>		
-					<!-- Footer -->
-					<footer id="footer">
-						<div class="container">
-							<ul class="icons">
-								<!-- <li><a href="#" class="icon fa-facebook"></a></li>-->
-								<!-- <li><a href="https://twitter.com/LAMPS 2020" class="icon fa-twitter"></a></li>-->
-								<!-- <li><a href="#" class="icon fa-instagram"></a></li>-->
-							</ul>
-							<ul class="copyright">
-								<li>&copy; LAMPS 2020</li>
-								<!-- <li>Design: <a href="http://templated.co">TEMPLATED</a></li>-->
-								<!-- <li>Images: <a href="http://unsplash.com">Unsplash</a></li>-->
-							</ul>
-						</div>
-					</footer>
+		<div w3-include-html="footer-section.html"></div>
+
+		<script>
+			includeHTML();
+		</script>
 		<script>
 			function initMaps(){
 				//initMapDirections();
