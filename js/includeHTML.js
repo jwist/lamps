@@ -4,7 +4,7 @@ function includeHTML() {
         chair:'Julien Wist',
         chairAff:'Universidad del Valle, Colombia',
         programCommitteeChair:'María Eugenia Monge',
-        programCommitteeChairAff:'CIBION-CONICET',
+        programCommitteeChairAff:'CIBION-CONICET, Argentina',
         programCommittee1:'Freddy Ramos',
         programCommittee1Aff:'Universidad Nacional de Colombia, Colombia',
         programCommittee2:'Elaine Holmes',
@@ -15,8 +15,6 @@ function includeHTML() {
         steeringCommitteeChairAff: 'Universidad de los Andes, Colombia',
         steeringCommittee1: 'Mildrey Mosquera',
         steeringCommittee1Aff: 'Universidad del Valle, Colombia',
-        steeringCommittee2: 'Mildrey Mosquera',
-        steeringCommittee2Aff: 'Universidad del Valle, Colombia',
     };
     /* Loop through a collection of all HTML elements: */
     z = document.getElementsByTagName("*");
@@ -45,11 +43,13 @@ function includeHTML() {
   }
 
   function replaceHTML(txt, dictionary) {
-    console.log(Object.keys(dictionary));
 
     Object.keys(dictionary).forEach((e, i) => {
-        let rep = '$' + e;
-        txt = txt.replace(rep, dictionary[e]);
+        let rep = '\\$' + e + '\\$';
+        let regex = new RegExp(rep, 'g');
+        console.log(regex);
+
+        txt = txt.replace(regex, dictionary[e]);
     });
     return txt;
   }
