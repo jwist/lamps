@@ -1,11 +1,10 @@
 <!DOCTYPE HTML>
 <!DOCTYPE HTML>
 <!--
-	Spatial by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	
 -->
 <html>
+	<head>
 		<title>LAMPS 2020 - Registration</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
@@ -14,35 +13,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<script>
-			function includeHTML() {
-			  var z, i, elmnt, file, xhttp;
-			  /* Loop through a collection of all HTML elements: */
-			  z = document.getElementsByTagName("*");
-			  for (i = 0; i < z.length; i++) {
-				elmnt = z[i];
-				/*search for elements with a certain atrribute:*/
-				file = elmnt.getAttribute("w3-include-html");
-				if (file) {
-				  /* Make an HTTP request using the attribute value as the file name: */
-				  xhttp = new XMLHttpRequest();
-				  xhttp.onreadystatechange = function() {
-					if (this.readyState == 4) {
-					  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-					  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-					  /* Remove the attribute, and call this function once more: */
-					  elmnt.removeAttribute("w3-include-html");
-					  includeHTML();
-					}
-				  }
-				  xhttp.open("GET", file, true);
-				  xhttp.send();
-				  /* Exit the function: */
-				  return;
-				}
-			  }
-			}
-		</script>
+		<script src="js/includeHTML.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -50,141 +21,103 @@
 		</noscript>
 	</head>
 	<body>
+	
+		<div w3-include-html="header-section.html"></div>
 
-		<!-- Header -->
-			<header id="header">				
-				<nav id="nav">
-						<ul>
-								<li><a href="index.html">Home</a></li>
-							<!--	<li><a href="call.html">Call</a></li>
-								<li><a href="program.html">Program</a></li>
-									<li><a href="keynotes.html">Keynotes</a></li>-->
-						<!--	<li><a href="school.html">AMW School</a></li>-->
-						<!--	<li><a href="organization.html">Organization</a></li>-->
-						<!--		<li><a href="attending.html">Attending</a></li>-->
-								<li><a href="registration.html">Registration</a></li>
-							<!--	<li><a href="news.html">News!</a></li>-->
-							<li><a href="previous.html">Previous editions</a></li>
-						</ul>
-				</nav>
-			</header>
-
-		<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="container">
-					<header class="major special">
-						<h2>LAMPS 2020 Registration</h2>
-						<br>
-						<!-- <strong>
-						<a href="form.html">¡Register here!</a>
-						</strong> -->
-					</header>
-					<h3>Registration Fees</h3>
-					
-					<div class="10u 12u(small)">
-						<table>
-							
-							<tbody>
-								<tr>
-									<td><b>Type</b></td>
-									<td><b>Early (before August 1)</b></td>
-									<td><b>Normal (after August 1)</b></td>
-								</tr>
-								<tr>
-									<td>Undergraduate Students</td>
-									<td>200'000 COP</td>
-									<td>225'000 COP</td>
-								</tr>
-								<tr>
-									<td>Posgraduate Student</td>
-									<td>225'000 COP</td>
-									<td>275'000 COP</td>
-								</tr>
-								<tr>
-									<td>Non Academics</td>
-									<td>425'000 COP</td>
-									<td>475'000 COP</td>
-								</tr>
-							</tbody>						
-						</table>
-					</div>	
-					
-					<p>
-					Registration fees include
+		
+		<section id="main" class="wrapper">
+			<div class="container">
+				<header class="major special">
+					<h2>LAMPS 2020 Registration</h2>
+					<br>
+					<!-- <strong>
+					<a href="form.html">¡Register here!</a>
+					</strong> -->
+				</header>
+				
+				<h3>Registration Fees</h3>
+				
+				<div class="10u 12u(small)">
+					<table>
+						<tbody>
+							<tr>
+								<td><b>Type</b></td>
+								<td><b>Early (before August 1)</b></td>
+								<td><b>Normal (after August 1)</b></td>
+							</tr>
+							<tr>
+								<td>Undergraduate Students</td>
+								<td>200'000 COP</td>
+								<td>225'000 COP</td>
+							</tr>
+							<tr>
+								<td>Posgraduate Student</td>
+								<td>225'000 COP</td>
+								<td>275'000 COP</td>
+							</tr>
+							<tr>
+								<td>Non Academics</td>
+								<td>425'000 COP</td>
+								<td>475'000 COP</td>
+							</tr>
+						</tbody>						
+					</table>
+				</div>	
+				
+				<p>Registration fees include
 					<ul>
 					<li>LAMPS School October 5 - 7 (lunch NOT included)</li>
 					<li>Welcome reception Monday 5</li>
 					</ul>
-					
 					Note that to register with STUDENT rate, you should provide contact details of your supervisor.
-					</p>
-					
-					<p>
+				</p>
+				
+				<p>
 					<b>HOW TO REGISTER?</b> Fill out this <a href="form.html">Registration Form</a>. 
 					Once you have paid (see instructions below), send a copy of the payment confirmation 
-					 to latinnmrschool@gmail.com
-					</p>
+					to latinnmrschool@gmail.com
+				</p>
 
-					<p>
-						<b>HOW TO SUBMIT YOUR POSTER?</b> Fill the form above. You will be asked for your poster title. You will be notified on September 15 whether your poster is accepted or not.
-						</p>
-					
-					<p>
+				<p>
+					<b>HOW TO SUBMIT YOUR POSTER?</b> Fill the form above. You will be asked for your poster title. You will be notified on September 15 whether your poster is accepted or not.
+				</p>
 
-					<p>
-						<b>PREPARE YOUR ABSTRACT</b> Once you registered and opt for a poster, please use this <a href="images/template_abstract_LANMR_2018.docx">template</a> to 
-						prepare your abstract. Then send it to latinamericannmrschool_@_gmail.com
-						</p>
-								
-					<p>
-					
-					<hr>
-						
-
-					<div class="container">
+				<p>
+					<b>PREPARE YOUR ABSTRACT</b> Once you registered and opt for a poster, please use this <a href="images/template_abstract_LANMR_2018.docx">template</a> to 
+					prepare your abstract. Then send it to latinamericannmrschool_@_gmail.com
+				</p>		
+				
+				<div class="container">
 					<div class="box alt">
 						<div class="row 50% uniform">
-							
+						
 							<div class="12u">
 								<header>
 									<h3>Payment instructions</h3>
 								</header>
-								<p>
+							<!--<b>PAGOS</b>
+							</p>
+							<p>
+							Usted podrá pagar en línea por PSE o por consignación. Sigue las instrucciones aquí: <a href="https://sire.uniandes.edu.co/pagos/login.xhtml?event=logout">https://sire.uniandes.edu.co/pagos/login.xhtml?event=logout</a>
+							</p>
+							<p>Guía para el pago: <a href="images/guia.pdf">pdf</a></p> -->
+							</div>
+						</div>
+					</div>
+				</div>			
+		</section>
 
-<p>
-<!--<b>PAGOS</b>
-</p>
-<p>
-Usted podrá pagar en línea por PSE o por consignación. Sigue las instrucciones aquí: <a href="https://sire.uniandes.edu.co/pagos/login.xhtml?event=logout">https://sire.uniandes.edu.co/pagos/login.xhtml?event=logout</a>
-</p>
-<p>Guía para el pago: <a href="images/guia.pdf">pdf</a></p> -->
- 
+		<section>
+			<div class="container">
+				<p>To correctly see the following section please desactivate your adblocker.</p>
+			</div>
+			<div w3-include-html="sponsor-section.html"></div>
+		</section>
 
+		<div w3-include-html="footer-section.html"></div>
 
-							
-						
-			</section>
-
-
-
-<div w3-include-html="sponsor-section.html"></div>
-		<!-- Footer -->
-		<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<!-- <li><a href="#" class="icon fa-facebook"></a></li>-->
-						<!-- <li><a href="https://twitter.com/LAMPS 2020" class="icon fa-twitter"></a></li>-->
-						<!-- <li><a href="#" class="icon fa-instagram"></a></li>-->
-					</ul>
-					<ul class="copyright">
-						<li>&copy; LAMPS 2020</li>
-						<!-- <li>Design: <a href="http://templated.co">TEMPLATED</a></li>-->
-						<!-- <li>Images: <a href="http://unsplash.com">Unsplash</a></li>-->
-					</ul>
-				</div>
-			</footer>
-			<script>
-				includeHTML();
-			</script>
+		<script>
+			includeHTML();
+		</script>
 	</body>
 </html>
