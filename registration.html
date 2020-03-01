@@ -135,10 +135,14 @@ Usted podrá pagar en línea por PSE o por consignación. Sigue las instruccione
 							
 						
 			</section>
-<!--#include file="sponsor-section.html" -->
-<div w3-include-html="sponsor-section.html"></div>
-<link rel="import" href="sponsor-section.html">
-			
+
+
+<link rel="import" id="sponsor" href="sponsor-section.html">
+<script>
+	var getImport = document.querySelector('#sponsor');
+	var getContent = getImport.import.querySelector('#sponsor');
+	document.body.appendChild(document.importNode(getContent, true));
+</script>
 
 		<!-- Footer -->
 		<footer id="footer">
