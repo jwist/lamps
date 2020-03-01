@@ -2,7 +2,21 @@ function includeHTML() {
     var z, i, elmnt, file, xhttp, xjson;
     xjson = {
         chair:'Julien Wist',
-        chair2:'María Eugenia Monge'
+        chairAff:'Universidad del Valle, Colombia',
+        programCommitteeChair:'María Eugenia Monge',
+        programCommitteeChairAff:'CIBION-CONICET',
+        programCommittee1:'Freddy Ramos',
+        programCommittee1Aff:'Universidad Nacional de Colombia, Colombia',
+        programCommittee2:'Elaine Holmes',
+        programCommittee2Aff:'Murdoch University, Australia',
+        programCommittee3:'Antonio Gilberto Ferreira',
+        programCommittee3Aff:'Universidade Federal de São Carlos',
+        steeringCommitteeChair: 'Monica Cala',
+        steeringCommitteeChairAff: 'Universidad de los Andes, Colombia',
+        steeringCommittee1: 'Mildrey Mosquera',
+        steeringCommittee1Aff: 'Universidad del Valle, Colombia',
+        steeringCommittee2: 'Mildrey Mosquera',
+        steeringCommittee2Aff: 'Universidad del Valle, Colombia',
     };
     /* Loop through a collection of all HTML elements: */
     z = document.getElementsByTagName("*");
@@ -35,8 +49,7 @@ function includeHTML() {
 
     Object.keys(dictionary).forEach((e, i) => {
         let rep = '$' + e;
-        txt.replace(rep, dictionary[e]);
+        txt = txt.replace(rep, dictionary[e]);
     });
-    console.log(txt.replace('chair', 'test'));
     return txt;
   }
